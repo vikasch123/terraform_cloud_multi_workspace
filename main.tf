@@ -26,6 +26,6 @@ module "ec2_module" {
   source        = "./modules/compute"
   ami           = var.ami
   instance_type = var.instance_type
-  subnet_id     = var.subnet_id
+  subnet_id     = module.vpc_module.subnet_ids[0]
 
 }

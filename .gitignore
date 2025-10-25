@@ -30,6 +30,8 @@ terraform.rc
 # Ignore environment or local-specific files
 .envrc
 
+modules/networking/.terraform.lock.hcl
+
 # IDE settings (optional)
 #.vscode/
 #.idea/

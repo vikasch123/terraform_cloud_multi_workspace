@@ -1,15 +1,3 @@
-terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    workspaces {
-      prefix = "django-chat-"
-    }
-  }
-
-}
-
-
-
 module "vpc_module" {
   source              = "./modules/networking"
   cidr_block          = var.cidr_block
